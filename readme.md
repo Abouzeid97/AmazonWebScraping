@@ -34,3 +34,40 @@ This project is a Django-based POST API built with Django REST Framework and Sel
 ```bash
 git clone https://github.com/yourusername/amazon-scraper-api.git
 cd amazon-scraper-api
+```
+2. **Create a Virtual Environment & Activate**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use venv\Scripts\activate
+```
+3. **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+4. **Run the Server**
+```bash
+python manage.py runserver
+```
+5. **Test the API**
+```bash
+POST localhost:8000/scrape/
+```
+Send a JSON body like:
+```bash
+{
+  "search_term": "laptop"
+}
+```
+Response
+```bash
+[
+  {
+    "title": "HP Laptop 15s...",
+    "url": "https://www.amazon.eg/dp/B0DNMM1RYQ",
+    "price": 14599,
+    "rating": 4.3
+  },
+  ...
+]
+```
+
