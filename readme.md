@@ -71,3 +71,15 @@ Response
 ]
 ```
 
+❓ Why Selenium?
+
+While BeautifulSoup is a great tool for parsing static HTML, Amazon dynamically loads product data and actively implements bot detection mechanisms that block traditional scrapers. Therefore, this project uses Selenium, which:
+
+Interacts with the website like a real user.
+
+Handles JavaScript-rendered content.
+
+Helps bypass bot protection and load dynamic elements reliably.
+
+
+This ensures more accurate and consistent scraping results from Amazon.eg.
